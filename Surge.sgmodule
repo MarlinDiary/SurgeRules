@@ -10,5 +10,8 @@ http-response ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards
 # > spotify
 Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js,argument=appid=20231006001837955&securityKey=xBKdseJ_zqU16NrewXb_
 
+# > haijiao
+haijiao = type=http-response, pattern=^http[s]?:\/\/.*(haijiao|hj).+api\/(topic.+\d+|attachment|login\/signin|user\/(current|info\/\d+)|banner\/banner_list)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/haijiao.js, timeout=60, script-update-interval=0
+
 [MITM]
-hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 
+hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, *hj*, *haijiao*, 
