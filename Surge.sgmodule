@@ -32,49 +32,6 @@ https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=613
 # ＞彩云天气解锁vip
 http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/mymoonyue/QuantumultX/master/Scripts/scripts/caiyun_svip.js, requires-body=true, timeout=10
 
-# > NobyDa整理
-# > 人人视频 去广告
-http-response ^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info requires-body=1,script-path=https://Choler.github.io/Surge/Script/rrsp.js,tag=人人视频去广告
-http-response ^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel$ requires-body=1,script-path=https://Choler.github.io/Surge/Script/rrsp.js,tag=人人视频去广告
-# > 小小影视  去广告(By Eric)
-http-response ^https:\/\/.*\/getGlobalData requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/xxysad.js,tag=小小影视去广告
-# > 爱美剧Vip (by huihui）(官网：app.meiju2018.com)
-http-response ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js,tag=爱美剧VIP
-# > 网易蜗牛读书VIP (By yxiaocai and JO2EY)
-http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,tag=网易蜗牛读书VIP
-# > 知音漫客VIP (By mieqq)
-http-response ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js,tag=知音漫客VIP
-# > VSCO滤镜VIP
-http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js,tag=VSCO滤镜VIP
-# > 大片-视频编辑器 VIP
-http-response ^https?:\/\/api\.vnision\.com\/v1\/(users\/|banners) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/dapian.js,tag=大片-视频编辑器 VIP
-# > 91短视频
-http-response “^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$” requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js,tag=91短视频
-# > 香蕉视频VIP
-http-response ^https?:\/\/.*\.(lago|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js,tag=香蕉视频VIP
-# > 陆琪讲故事
-http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js,tag=陆琪讲故事
-# > WPS (By eHpo)
-http-response ^https://account.wps.*/api/users/ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,tag=WPS
-# > Gyroscope 解锁 pro (By Maasea)
-http-response ^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/gyroscope.js,tag=Gyroscope 解锁 pro
-# > JibJab解锁pro
-http-response ^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js,tag=JibJab解锁pro
-# > Termius 解锁本地pro  (By Maasea)
-# http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Termius.js,tag=Termius 解锁本地pro
-# > 小影 解锁Vip (By @hiepkimcdtk55)
-http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,tag=小影 解锁Vip
-# > 扫描全能王 pro
-http-response ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,tag=扫描全能王 pro
-# > VUE pro
-http-response ^https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,tag=VUE pro
-# > NiChi 解锁素材
-http-response ^https?:\/\/mp\.bybutter\.com\/mood\/(official-templates|privileges) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/NiChi.js,tag=NiChi 解锁素材
-# > PicsArt美易 pro
-http-response ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,tag=PicsArt美易 pro
-# > Splice 视频编辑器 pro
-http-response ^https:\/\/splice\.oracle\.\w+\.com\/devices\/me requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Splice.js,tag=Splice 视频编辑器 pro
-
 # > superuv
 # > 驾校一点通 (by @superuv)
 http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/jxydt.js,tag=驾校一点通
