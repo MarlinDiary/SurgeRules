@@ -15,7 +15,7 @@ http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ script-path=
 http-response ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/picsArt.js
 
 #Vivavideo
-http-response ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/vivavideo.js
+http-response ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/* script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/vivavideo.js
 
 #Undfold
 http-response ^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/Unfold.js
@@ -54,13 +54,13 @@ http-response ^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient sc
 http-response ^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token* script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/elevate.js
 
 #beautyplus
-http-response ^https:\/\/api-intl\.mr\.meitu\.com/.*/subs_offer_elg$ script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/beautyplusvip.js
+http-response ^https:\/\/api-intl\.mr\.meitu\.com/.*/subs_offer_elg$ script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/beautyplus.js
 
 #camera360
 http-response ^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/camera360.js
 
 #zingtv
-http-response ^https?:\/\/api\.tv\.zing\.vn\/.*/user* script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/zingtvvipv1.js
+http-response ^https?:\/\/api\.tv\.zing\.vn\/.*/user* script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/zingtvv1.js
 
 #calm
 http-response ^https:\/\/api\.calm\.com\/me$ script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/calm.js
