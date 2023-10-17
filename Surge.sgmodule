@@ -34,13 +34,13 @@ Lingvist_13 = type=http-response, pattern=^https:\/\/payment-api\.lingvist\.com\
 [URL Rewrite]
 
 # > economist
-^https?://www\.google\.com/search\?q=!e.*$ https://www.economist.com/ 302
+^https?://www\.google\.com/search\?q=.e.*$ https://www.economist.com/ 302
 
 # > v2ex
-^https?://www\.google\.com/search\?q=!v.*$ https://www.v2ex.com/ 302
+^https?://www\.google\.com/search\?q=.v.*$ https://www.v2ex.com/ 302
 
 # > pingcong
-^https?://www\.google\.com/search\?q=!p.*$ https://pincong.rocks/ 302
+^https?://www\.google\.com/search\?q=.p.*$ https://pincong.rocks/ 302
 
 [MITM]
 hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 91porn.com, purchase-foodiecn-api.yiruikecorp.com, buy.itunes.apple.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com, www.google.com, www.economist.com, www.v2ex.com, pincong.rocks
