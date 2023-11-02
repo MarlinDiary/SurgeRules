@@ -28,8 +28,33 @@ Grammarly=type=http-response,pattern=^https?:\/\/subscription\.grammarly\.com\/a
 # > lightroom
 LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
 
-# > Lingvist
+# > lingvist
 Lingvist_13 = type=http-response, pattern=^https:\/\/payment-api\.lingvist\.com\/1\.4\/user\/services, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingvist.js, timeout=60, script-update-interval=0
 
+<<<<<<< HEAD
 [MITM]
 hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 91porn.com, purchase-foodiecn-api.yiruikecorp.com, buy.itunes.apple.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com
+=======
+# > boring days
+boring_8 = type=http-response, pattern=^https?:\/\/boringday\.api\.neuronlabs\.art\/v\d\/(order\/(premium|restore)|my\/info), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boring.js, timeout=60, script-update-interval=0
+
+[URL Rewrite]
+
+# > economist
+^https?://www\.google\.com/search\?q=.e.*$ https://www.economist.com/ 302
+
+# > v2ex
+^https?://www\.google\.com/search\?q=.v.*$ https://www.v2ex.com/ 302
+
+# > pingcong
+^https?://www\.google\.com/search\?q=.p.*$ https://pincong.rocks/ 302
+
+# > baidu
+^https:\/\/www\.google\.com\/search\?q=bd\+([^&]+) https://m.baidu.com/s?word=$1 302
+
+# > maoliyun
+^https:\/\/www\.google\.com\/search\?q=ml\+([^&]+) https://www.maoliyun.com/search?k=$1 302
+
+[MITM]
+hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 91porn.com, purchase-foodiecn-api.yiruikecorp.com, buy.itunes.apple.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com, www.google.com, www.economist.com, www.v2ex.com, pincong.rocks, m.baidu.com, boringday.api.neuronlabs.art
+>>>>>>> 5a4033569dded5629b310c5f967ca1c4c20c1a72
