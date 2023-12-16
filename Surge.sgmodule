@@ -36,7 +36,4 @@ hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 91porn.com, purcha
 
 [General]
 
-skip-proxy = %APPEND% *googleapis.com
-skip-proxy = %APPEND% *habitify.me
-
 [Rule]
