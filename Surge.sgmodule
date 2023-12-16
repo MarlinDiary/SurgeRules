@@ -36,10 +36,7 @@ hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 91porn.com, purcha
 
 [General]
 
-encrypted-dns-server = quic://api.habitify.me
-encrypted-dns-server = quic://firebaselogging-pa.googleapis.com
-
 
 [Rule]
 
-DOMAIN-SUFFIX,douban.com,DIRECT
+DOMAIN-KEYWORD,douban,DIRECT
