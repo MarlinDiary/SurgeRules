@@ -42,4 +42,4 @@ encrypted-dns-server = quic://firebaselogging-pa.googleapis.com
 
 [Rule]
 
-DOMAIN-KEYWORD,douban,DIRECT
+DOMAIN-SUFFIX,douban.com,DIRECT
