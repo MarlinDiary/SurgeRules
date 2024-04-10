@@ -4,20 +4,11 @@
 
 [Script]
 
-# > memrise
-http-response ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MarlinDiary/Surge/main/Scripts/memrise.js,tag=memrise
-
-# > spotify
-Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js,argument=appid=20231006001837955&securityKey=xBKdseJ_zqU16NrewXb_
-
 # > 91porn
 91porn = type=http-response, pattern=^http[s]?://91porn\.com/view_video\.php\?.*viewkey=.*$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js, timeout=60, script-update-interval=0
 
 # > foodie
 yiruikecorp_13 = type=http-response, pattern=^https:\/\/purchase-foodiecn-api\.yiruikecorp\.com\/v1\/purchase\/subscription\/subscriber\/status, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yiruikecorp.js, timeout=60, script-update-interval=0
-
-# > bear
-XZJ=type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzj.js
 
 # > smallpdf
 smallpdf=type=http-response,pattern=https://pro.smallpdf.com/pro/account,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/smallpdf.js
@@ -32,7 +23,7 @@ LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*
 Lingvist_13 = type=http-response, pattern=^https:\/\/payment-api\.lingvist\.com\/1\.4\/user\/services, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingvist.js, timeout=60, script-update-interval=0
 
 [MITM]
-hostname = %APPEND% api.memrise.com, spclient.wg.spotify.com, 91porn.com, purchase-foodiecn-api.yiruikecorp.com, buy.itunes.apple.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com
+hostname = %APPEND% 91porn.com, purchase-foodiecn-api.yiruikecorp.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com
 
 [General]
 
