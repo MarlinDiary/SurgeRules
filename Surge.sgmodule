@@ -28,3 +28,4 @@ hostname = %APPEND% 91porn.com, purchase-foodiecn-api.yiruikecorp.com, pro.small
 [General]
 
 [Rule]
+DOMAIN-SUFFIX,updates.rewind.ai,REJECT
