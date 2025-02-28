@@ -6,9 +6,6 @@
 # > 91porn
 91porn = type=http-response, pattern=^http[s]?://91porn\.com/view_video\.php\?.*viewkey=.*$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js, timeout=60, script-update-interval=0
 
-# > Cubox (default response)
-Cubox = type=http-response, pattern=^https?:\/\/cubox\.(pro|cc)\/.+\/api\/userInfo, requires-body=true, max-size=3145728, script-path=data:text/javascript;charset=utf-8,var obj=JSON.parse($response.body);$done({body:JSON.stringify(obj)});
-
 # > foodie
 yiruikecorp_13 = type=http-response, pattern=^https:\/\/purchase-foodiecn-api\.yiruikecorp\.com\/v1\/purchase\/subscription\/subscriber\/status, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yiruikecorp.js, timeout=60, script-update-interval=0
 
@@ -25,7 +22,7 @@ LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*
 Lingvist_13 = type=http-response, pattern=^https:\/\/payment-api\.lingvist\.com\/1\.4\/user\/services, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingvist.js, timeout=60, script-update-interval=0
 
 [MITM]
-hostname = %APPEND% 91porn.com, purchase-foodiecn-api.yiruikecorp.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com, cubox.pro, cubox.cc
+hostname = %APPEND% 91porn.com, purchase-foodiecn-api.yiruikecorp.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com
 
 [General]
 
