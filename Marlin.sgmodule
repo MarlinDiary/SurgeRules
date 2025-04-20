@@ -21,8 +21,11 @@ LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*
 # > Lingvist
 Lingvist_13 = type=http-response, pattern=^https:\/\/payment-api\.lingvist\.com\/1\.4\/user\/services, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingvist.js, timeout=60, script-update-interval=0
 
+# > Endel
+Endel = type=http-response, pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js, requires-body=true, max-size=-1, timeout=60
+
 [MITM]
-hostname = %APPEND% 91porn.com, purchase-foodiecn-api.yiruikecorp.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com
+hostname = %APPEND% 91porn.com, purchase-foodiecn-api.yiruikecorp.com, pro.smallpdf.com, subscription.grammarly.com, photos.adobe.io, payment-api.lingvist.com, api-production.endel.io
 
 [General]
 
