@@ -1,4 +1,4 @@
-#!name=Bypass Paywalls
+#!name=Bypass Paywalls Clean
 #!desc=Inject BPC userscript and block common paywall backends
 #!author=magnolia1234 (original) & Surge port
 #!homepage=https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
@@ -8,7 +8,7 @@
 RULE-SET,https://raw.githubusercontent.com/MarlinDiary/SurgeRules/refs/heads/main/bpc_paywall_reject.list,REJECT
 
 [Script]
-BPC HTML Injector = type=http-response,pattern=^https?:\/\/(?!.*\.(?:css|js|mjs|png|jpg|jpeg|gif|svg|webp|ico|json|xml|rss|atom|woff|woff2|ttf|otf|mp4|mp3|m3u8|ts)(?:\?|$)).*,requires-body=1,max-size=0,script-path=https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=userscript%2Fbpc.en.user.js,script-update-interval=86400
+BPC HTML Injector = type=http-response,pattern=^https?:\/\/(?!.*\.(?:css|js|mjs|png|jpg|jpeg|gif|svg|webp|ico|json|xml|rss|atom|woff|woff2|ttf|otf|mp4|mp3|m3u8|ts)(?:\?|$)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/MarlinDiary/SurgeRules/refs/heads/main/bpc_en_injector.js,script-update-interval=86400
 
 [MITM]
 hostname = %APPEND% *
